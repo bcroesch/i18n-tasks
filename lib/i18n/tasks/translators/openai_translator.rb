@@ -83,7 +83,7 @@ module I18n::Tasks::Translators
 
       response = translator.chat(
         parameters: {
-          model: @i18n_tasks.translation_config[:openai_api_key] || 'gpt-3.5-turbo',
+          model: @i18n_tasks.translation_config[:openai_model_name] || 'gpt-3.5-turbo',
           messages: messages,
           temperature: 0.7
         }
